@@ -110,7 +110,10 @@ making the pattern obvious too early or making the player feel tricked?
   opening a door for another host to pass through.
 - If the host's time runs out before the objective is completed, the target
   escapes and can no longer be killed in that attempt. The timeline remains
-  unchanged and the mission fails.
+  unchanged and the mission fails, sending the player to the tactical screen.
+- From there, the player can restart the mission by taking over the initial
+  host again. Because this transfer is earlier, the butterfly effect cancels
+  all later actions; a separate restart button is not needed.
 - Dying—or deliberately ending the current life—takes the player to a tactical
   screen where they can manipulate time.
 
@@ -145,13 +148,20 @@ making the pattern obvious too early or making the player feel tricked?
 - A transfer has a time/coordinate: taking over someone from before the most
   recent transfer undoes all later transfers. The butterfly effect is the
   in-world explanation for why those later transfers no longer fit.
-- The player has a limited number of consciousness transfers. Transfers erased
-  by an earlier takeover do not count against that limit.
+- There is no total lifetime limit on consciousness transfers. At most four
+  people can be overridden concurrently.
 - Replaying or restarting a mission segment is therefore part of the intended
   gameplay loop, not merely a punishment.
 
-**Open:** Is the tactical screen a planning interface, a timeline map, or both?
-What does the player decide there besides whom and when to inhabit?
+### Tactical screen
+
+- The screen should feel like a replay of the mission with a full-map view and
+  fog of war.
+- The player can inspect actions from previous runs and choose to override
+  only a person they saw during a previous run.
+- The player uses this view to plan what to do next and whom to override.
+- Choosing an earlier takeover cancels later overrides and their actions. For
+  example, taking over someone at minute 2 cancels an override at minute 2:30.
 
 **Open:** What technical rule limits how far back in time the player can
 transfer?
